@@ -9,4 +9,4 @@ if (empty($wp_hasher))
 	$wp_hasher = new PasswordHash( 8, true );
 }
 $v = $wp_hasher->CheckPassword($pass,$hash);
-printf(json_encode(array('verify' = $v)));
+printf(json_encode(array('verify' => $v)));
